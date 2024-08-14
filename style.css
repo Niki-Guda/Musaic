@@ -331,7 +331,31 @@ body {
     border-radius: 4px;
 }
 
+/********Media Queri*********/
 
+@media only screen and (max-width: 600px) {
+    /* Styles for phones */
+}
+
+@media only screen and (min-width: 600px) {
+    /* Styles for tablets */
+}
+
+@media only screen and (min-width: 768px) {
+    /* Styles for small desktops */
+}
+
+@media only screen and (min-width: 992px) {
+    /* Styles for large desktops */
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Styles for extra large desktops */
+}
+
+@media only screen and (min-width: 1600px) {
+    /* Styles for ultra-wide screens */
+}
 
 
 
