@@ -12,6 +12,7 @@ body {
 /*****************************************/
 
 #menu {
+    display: flex;
     background-color: rgb(212, 205, 205);
     padding: 0px;
     height: 100px;
@@ -41,6 +42,7 @@ body {
 /*****************************************/
 
 #header{
+    display: flex;
     background-color: rgb(146, 127, 127);
     height: 110px;
     text-align: center;
