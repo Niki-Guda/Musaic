@@ -195,7 +195,6 @@ body {
 #info-pages {
     float: left;
     padding: 50px;
-    width: 60%;
     margin-top: 65px;
 }
 
@@ -332,31 +331,97 @@ body {
     padding: 4px;
     border-radius: 4px;
 }
-
+/****************************/
 /********Media Queri*********/
+/***************************/
 
 @media only screen and (max-width: 600px) {
     /* Styles for phones */
+    #menu a {
+        padding: 35px 15px;
+        width: 29.9%;
+        margin: auto;
+    }
+
+    
+    #footer {
+        font-size: 5px;
+    }
+    #events img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #info-pages {
+        font-size: x-large;
+    }
+
+    #book-artist {
+        margin: 0%;
+        border-radius: 0%;
+        padding: 39px;
+        background: linear-gradient(rgba(255, 255, 255, 0.596), rgb(212, 205, 205))
+    }
 }
 
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (orientation: portrait) {
     /* Styles for tablets */
+        #menu a {
+        padding: 35px 15px;
+        width: 29.9%;
+        margin: auto;
+    }
+
+    
+    #footer {
+        font-size: 5px;
+    }
+    #events img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #info-pages {
+        font-size: x-large;
+    }
+
+    #book-artist {
+        margin: 0%;
+        border-radius: 0%;
+        padding: 39px;
+        background: linear-gradient(rgba(255, 255, 255, 0.596), rgb(212, 205, 205), rgb(107, 87, 87))
+    }
 }
 
-@media only screen and (min-width: 768px) {
+
+@media only screen and (min-width: 1024px) {
     /* Styles for small desktops */
-}
+    #menu a {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        width: 29.9%;
+        margin: auto;
+    }
 
-@media only screen and (min-width: 992px) {
-    /* Styles for large desktops */
-}
+    
+    #footer {
+        font-size: 5px;
+    }
+    #events img {
+        width: 120px;
+        height: 120px;
+    }
 
-@media only screen and (min-width: 1200px) {
-    /* Styles for extra large desktops */
-}
+    #info-pages {
+        font-size: x-large;
+    }
 
-@media only screen and (min-width: 1600px) {
-    /* Styles for ultra-wide screens */
+    #book-artist {
+        margin: 0%;
+        border-radius: 0%;
+        padding: 39px;
+        background: linear-gradient(rgba(255, 255, 255, 0.596), rgb(212, 205, 205), rgb(107, 87, 87), rgba(255, 255, 255, 0.596))
+    }
 }
 
 
