@@ -23,7 +23,7 @@ body {
     display: inline-block;
     text-align: center;
     padding: 35px 1px;
-    width: 32.9%;
+    vw: 32.9%;
     text-decoration: none;
     color: white;
 
@@ -32,7 +32,7 @@ body {
 #menu a:hover {
     background-color: rgb(146, 127, 127);
     height: 30px;
-    width: 32.9%;
+    vw: 32.9%;
     margin: 0px;
 }
 
