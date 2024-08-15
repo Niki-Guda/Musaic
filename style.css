@@ -362,6 +362,28 @@ body {
         padding: 39px;
         background: linear-gradient(rgba(255, 255, 255, 0.596), rgb(212, 205, 205))
     }
+	#box1 {
+    float: left;
+    width: 29.1%;
+    padding-right: 10px;
+	}
+	
+	#box2 {
+	    float: left;
+	    width: 29.1%;
+	    padding-right: 10px;
+	}
+	
+	#box2 img {
+	    width: 10px;
+	    height: 10px;
+	}
+	
+	#box3 {
+	    float: right;
+	    width: 29.1%;
+	    padding-left: 10px;
+	}
 }
 
 @media screen and (min-width: 600px) and (orientation: portrait) {
