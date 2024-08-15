@@ -4,6 +4,7 @@
 
 body {
     font-family: Raleway, sans-serif;
+    font-size: 16px;
 }
 
 
@@ -12,28 +13,29 @@ body {
 /*****************************************/
 
 #menu {
-    display: flex;
-    background-color: rgb(212, 205, 205);
-    padding: 0px;
-    height: 100px;
-    width: 100%;
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly */
+  align-items: center; /* Centers items vertically */
+  background-color: rgb(212, 205, 205);
+  padding: 0;
+  height: 100px;
+  width: 100%;
 }
 
 #menu a {
-    display: inline-block;
-    text-align: center;
-    padding: 35px 5px;
-    vw: 32.9%;
-    text-decoration: none;
-    color: white;
-
+  flex: 1; /* Allows the links to grow and fill the available space */
+  text-align: center;
+  padding: 2.1875rem 0.3125rem; /* 35px 5px */
+  text-decoration: none;
+  color: white;
 }
 
 #menu a:hover {
     background-color: rgb(146, 127, 127);
-    height: 30px;
-    vw: 32.9%;
-    margin: 0px;
+    /* Avoid changing height to prevent layout shifts */
+    padding: 1.875rem 0.3125rem; /* Adjust padding instead of height */
+    width: 32.9%; /* Corrected property */
+    margin: 0;
 }
 
 
@@ -41,13 +43,13 @@ body {
 /************** HEADER *******************/
 /*****************************************/
 
-#header{
+#header {
     display: block;
     background-color: rgb(146, 127, 127);
-    height: 110px;
+    height: 6.875rem; /* 110px */
     text-align: center;
     color: white;
-    padding: 20px;
+    padding: 1.25rem; /* 20px */
 }
 
 
@@ -56,39 +58,42 @@ body {
 /*****************************************/
 
 #events {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem; /* 20px */
     width: 60%;
-    float: left;
+    margin: 0 auto; /* Center the container */
 }
 
-#events h1{
+#events h1 {
     text-align: center;
 }
 
 #events img {
-    width: 200px;
-    height: 130px;
-    border: solid 3px ;
-    margin: 50px;
-    margin-left: 100px;
-    transition: -moz-transform 0.5s ease-in;
-	-webkit-transition: -webkit-transform 0.5s ease-in;
-	-o-transition: -o-transform 0.5s ease-in;
+    width: 12.5rem; /* 200px */
+    height: 8.125rem; /* 130px */
+    border: solid 3px;
+    margin: 3.125rem; /* 50px */
+    margin-left: 6.25rem; /* 100px */
+    transition: transform 0.5s ease-in;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    -o-transition: -o-transform 0.5s ease-in;
 }
 
-#events img:hover{
-	transform: scale(2);
-	-webkit-transform: scale(2);
-	-o-transform: scale(2);
- }
+#events img:hover {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+}
 
-#events a{
+#events a {
     color: black;
 }
 
 #events p {
-    letter-spacing: 1px;
-    padding: 5px;
+    letter-spacing: 0.0625rem; /* 1px */
+    padding: 0.3125rem; /* 5px */
 }
 
 
@@ -98,14 +103,18 @@ body {
 /*****************************************/
 
 #sidebar {
-    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 30%;
-    margin-top: 125px;
+    margin-top: 7.8125rem; /* 125px */
     color: rgb(146, 127, 127);
+    padding: 1.25rem; /* 20px */
 }
 
 #sidebar li {
-    padding: 15px;
+    padding: 0.9375rem; /* 15px */
+    list-style: none; /* Remove default list styling */
 }
 
 #sidebar a {
@@ -124,67 +133,58 @@ body {
 /*****************************************/
 
 #footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     background-color: rgb(47, 54, 49);
     color: white;
-    font-size: small;
+    font-size: 0.875rem; /* Adjusted for readability */
     text-align: center;
     width: 100%;
-    height: 340px;
-    clear: both;
+    padding: 2rem; /* Adjusted for better spacing */
+    box-sizing: border-box;
 }
-
 
 #footer a {
     color: white;
     text-decoration: none;
 }
 
-#footer a.hover {
+#footer a:hover {
     color: rgba(255, 255, 255, 0.596);
     font-weight: 400;
 }
 
 #footer li {
-    padding: 15px;
+    padding: 0.9375rem; /* 15px */
+    list-style: none; /* Remove default list styling */
 }
 
-#box1 {
-    float: left;
-    width: 29.1%;
-    padding-right: 30px;
-}
-
-#box2 {
-    float: left;
-    width: 29.1%;
-    padding-right: 30px;
+#box1, #box2, #box3 {
+    flex: 1;
+    padding: 1.875rem; /* 30px */
+    box-sizing: border-box;
 }
 
 #box2 img {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem; /* 20px */
+    height: 1.25rem; /* 20px */
 }
-
-#box3 {
-    float: right;
-    width: 29.1%;
-    padding-left: 30px;
-}
-
-
 
 /******************************************/
 /*************** COPYRIGHT ******************/
 /*****************************************/
 
-
 #copyright {
-    height: 50px;
-    padding: 10px;
+    height: 3.125rem; /* 50px */
+    padding: 0.625rem; /* 10px */
     background-color: rgb(10, 10, 10);
     color: white;
     text-align: center;
+    box-sizing: border-box;
 }
+
 
 
 
@@ -193,19 +193,22 @@ body {
 /*****************************************/
 
 #info-pages {
-    float: left;
-    padding: 50px;
-    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.125rem; /* 50px */
+    margin-top: 4.0625rem; /* 65px */
+    box-sizing: border-box;
 }
 
 #info-pages img {
-    width: 500px;
-    height: 350px;
-    padding-bottom: 50px;
+    width: 31.25rem; /* 500px */
+    height: 21.875rem; /* 350px */
+    padding-bottom: 3.125rem; /* 50px */
 }
 
 #info-pages h1 {
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem; /* 50px */
 }
 
 
@@ -215,73 +218,91 @@ body {
 /*****************************************/
 
 #artists img {
-    margin: 30px 0px 0px 50px;
-    padding: 15px;
-    width: 100px;
-    height: 100px;
+    margin: 1.875rem 0 0 3.125rem; /* 30px 0px 0px 50px */
+    padding: 0.9375rem; /* 15px */
+    width: 6.25rem; /* 100px */
+    height: 6.25rem; /* 100px */
     border-radius: 50%;
 }
 
 #artist-profile {
-    margin: 50px;
-    align-content: center;
-    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.125rem; /* 50px */
+    font-size: 1.25rem; /* Adjusted for readability */
 }
 
 #artist-profile img {
-    width: 300px;
-    border-radius: 50px;
-
-}
-#book-artist{
-    margin: 100px;
-    padding: 100px;
-    border-radius: 30px;
-    
-    background: linear-gradient(rgba(255, 255, 255, 0.596), rgb(212, 205, 205), rgb(107, 87, 87))
+    width: 18.75rem; /* 300px */
+    border-radius: 3.125rem; /* 50px */
 }
 
-.contact-input{
-    width: 500px;
-    height: 50px;
+#book-artist {
+    display: inline-block;
+    margin: 3.125rem; /* 50px */
+    padding: 2.5rem; /* 40px */
+    border-radius: 1.875rem; /* 30px */
+    background: linear-gradient(rgba(255, 255, 255, 0.596), rgb(212, 205, 205), rgb(107, 87, 87));
+    color: white;
+    text-align: center;
+    font-size: 1.25rem; /* Adjusted for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#book-artist:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-input {
+    width: 31.25rem; /* 500px */
+    height: 3.125rem; /* 50px */
     border: none;
     outline: none;
     font-weight: 500;
-   
-    border-radius: 20px;
-}
-.contact-input:focus{
-    border: 2px solid rgb(107, 87, 87);
+    border-radius: 1.25rem; /* 20px */
+    padding: 0.625rem; /* 10px */
+    box-sizing: border-box;
 }
 
-.contact-input::placeholder{
+.contact-input:focus {
+    border: 0.125rem solid rgb(107, 87, 87); /* 2px */
+}
+
+.contact-input::placeholder {
     color: lightgray;
 }
 
-#book-artist textarea{
-    height: 200px;
-    padding-top: 15px;
-    border-radius: 10px;
-    
+#book-artist textarea {
+    height: 12.5rem; /* 200px */
+    padding-top: 0.9375rem; /* 15px */
+    border-radius: 0.625rem; /* 10px */
+    padding: 0.625rem; /* 10px */
+    box-sizing: border-box;
 }
 
-#book-artist button{
+#book-artist button {
     display: flex;
     align-items: center;
-    padding: 15px 30px;
-    font-size: 16px;
+    padding: 0.9375rem 1.875rem; /* 15px 30px */
+    font-size: 1rem; /* 16px */
     color: white;
-    gap: 10px;
+    gap: 0.625rem; /* 10px */
     border: none;
-    border-radius: 50px;
-    background: linear-gradient(270deg, rgb(134, 129, 129), rgb(61, 37, 37) );
+    border-radius: 3.125rem; /* 50px */
+    background: linear-gradient(270deg, rgb(134, 129, 129), rgb(61, 37, 37));
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-#book-artist button:hover{
+#book-artist button:hover {
     background: linear-gradient(270deg, rgb(179, 175, 175), rgb(121, 94, 94));
+    transform: scale(1.05);
 }
-#book-artist a{
+
+#book-artist a {
     text-decoration: none;
 }
 
@@ -295,18 +316,12 @@ body {
     position: absolute;
     background: linear-gradient(270deg, rgb(179, 175, 175), rgb(121, 94, 94));
     transition: background-color 0.3s ease; /* Smooth transition */
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 10rem; /* 160px */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* 8px 16px */
     z-index: 1;
-    max-height: 300px; /* Set the maximum height */
+    max-height: 18.75rem; /* 300px */
     overflow-y: auto; /* Enable vertical scrolling */
     overflow-x: hidden; /* Disable horizontal scrolling */
-}
-
-
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 
@@ -314,120 +329,138 @@ body {
 .dropdown-content label input[type="radio"] {
     transform: scale(1); /* Default size */
     transition: transform 0.4s ease; /* Smooth transition */
+    margin-right: 0.625rem; /* 10px for spacing */
 }
-
 
 /* Style for the radio buttons and labels */
 .dropdown-content label {
     display: flex;
     align-items: center;
     transition: transform 0.4s ease; /* Smooth transition */
+    padding: 0.25rem; /* 4px for spacing */
+    border-radius: 0.25rem; /* 4px for rounded corners */
 }
 
 /* Enlarge radio buttons and labels on hover */
 .dropdown-content label:hover {
-    transform: scale(1.1); /* Enlarge to 1 times the original size */
+    transform: scale(1.1); /* Enlarge to 1.1 times the original size */
     background-color: rgb(119, 90, 90);
-    padding: 4px;
-    border-radius: 4px;
+    padding: 0.25rem; /* 4px for spacing */
+    border-radius: 0.25rem; /* 4px for rounded corners */
 }
+
 /****************************/
 /********Media Queri*********/
 /***************************/
 
-@media only screen and (max-width: 600px) {
-    /* Styles for phones */
+#menu {
+        flex-direction: column;
+        height: auto;
+    }
+
     #menu a {
-        padding: 35px 15px;
-        width: 29.9%;
+        padding: 1rem 0.5rem; /* Adjusted padding */
+        width: 100%; /* Full width for smaller screens */
     }
 
-    
+	 /* Header */
+    #header {
+        height: auto;
+        padding: 1.25rem; /* Adjusted padding */
+        font-size: 1rem; /* Adjusted font size */
+    }
+
+    /* Footer */
     #footer {
-        font-size: 5px;
+        height: auto;
+        padding: 2rem; /* Adjusted padding */
+        font-size: 0.75rem; /* Adjusted font size */
     }
+
+    #footer li {
+        padding: 0.5rem; /* Adjusted padding */
+    }
+
+    #box1, #box2, #box3 {
+        width: 100%; /* Full width for smaller screens */
+        padding: 1rem; /* Adjusted padding */
+    }
+
+    /* Events */
+    #events {
+        width: 100%; /* Full width for smaller screens */
+        padding: 1rem; /* Adjusted padding */
+    }
+
     #events img {
-        width: 100px;
-        height: 100px;
+        width: 50%; /* Adjusted width */
+        height: auto; /* Maintain aspect ratio */
+        margin: 1rem auto; /* Center images */
     }
 
+    /* Info Pages */
     #info-pages {
-        font-size: x-large;
+        width: 100%; /* Full width for smaller screens */
+        padding: 1.5rem; /* Adjusted padding */
+        margin-top: 2rem; /* Adjusted margin */
     }
 
+    #info-pages img {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        padding-bottom: 1rem; /* Adjusted padding */
+    }
+
+    #info-pages h1 {
+        padding-bottom: 1rem; /* Adjusted padding */
+    }
+
+    /* Sidebar */
+    #sidebar {
+        width: 100%; /* Full width for smaller screens */
+        margin-top: 2rem; /* Adjusted margin */
+        padding: 1rem; /* Adjusted padding */
+    }
+
+    #sidebar li {
+        padding: 0.5rem; /* Adjusted padding */
+    }
+
+    /* Book Artist */
     #book-artist {
-        margin: 0%;
-        border-radius: 0%;
-        padding: 39px;
-        background: linear-gradient(rgba(255, 255, 255, 0.596), rgb(212, 205, 205))
+        margin: 1.5rem; /* Adjusted margin */
+        padding: 1.5rem; /* Adjusted padding */
+        border-radius: 1rem; /* Adjusted border radius */
     }
-	#box1 {
-    float: left;
-    width: 29.1%;
-    padding-right: 10px;
-	}
-	
-	#box2 {
-	    float: left;
-	    width: 29.1%;
-	    padding-right: 10px;
-	}
-	
-	#box2 img {
-	    width: 10px;
-	    height: 10px;
-	}
-	
-	#box3 {
-	    float: right;
-	    width: 29.1%;
-	    padding-left: 10px;
-	}
 
-	#events {
-	    padding: 10px;
-	    width: 40%;
-	    float: left;
-	}
+    /* Contact Input */
+    .contact-input {
+        width: 100%; /* Full width for smaller screens */
+        height: 2.5rem; /* Adjusted height */
+        font-size: 1rem; /* Adjusted font size */
+        padding: 0.625rem; /* Adjusted padding */
+    }
 
+    #book-artist textarea {
+        height: 10rem; /* Adjusted height */
+        padding: 0.625rem; /* Adjusted padding */
+    }
 
-	#events img {
-	    width: 18%;
-	    height: 18%px;
-	    border: solid 3px ;
-	    margin: 5px;
-	    margin-left: 10px;
-	}
+    #book-artist button {
+        padding: 0.625rem 1.25rem; /* Adjusted padding */
+        font-size: 0.875rem; /* Adjusted font size */
+    }
+
+    /* Copyright */
+    #copyright {
+        height: auto;
+        padding: 1rem; /* Adjusted padding */
+        font-size: 0.75rem; /* Adjusted font size */
+    }
+
 }
 
-@media screen and (min-width: 600px) and (orientation: portrait) {
-    /* Styles for tablets */
-        #menu a {
-        padding: 35px 15px;
-        width: 29.9%;
-        margin: auto;
-    }
 
-    
-    #footer {
-        font-size: 5px;
-    }
-    #events img {
-        width: 100px;
-        height: 100px;
-    }
-
-    #info-pages {
-        font-size: x-large;
-    }
-
-    #book-artist {
-        margin: 0%;
-        border-radius: 0%;
-        padding: 39px;
-        background: linear-gradient(rgba(255, 255, 255, 0.596), rgb(212, 205, 205), rgb(107, 87, 87))
-    }
-}
 
 
 
