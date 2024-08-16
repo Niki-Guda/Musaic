@@ -241,11 +241,14 @@ body {
     border-radius: 50%;
 }
 
-#artist-profile {
-    margin: 50px;
-    align-content: center;
-    font-size: larger;
+.artist-profile {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 #artist-profile img {
     width: 300px;
@@ -259,6 +262,26 @@ body {
     
     background: linear-gradient(rgba(255, 255, 255, 0.596), rgb(212, 205, 205), rgb(107, 87, 87))
 }
+
+#book-artist input, #book-artist textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#book-artist button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#book-artist button:hover {
+    background-color: #45a049;
+}
+
 
 .contact-input{
     width: 500px;
@@ -380,6 +403,7 @@ body {
         padding: 39px;
         background: linear-gradient(rgba(255, 255, 255, 0.596), rgb(212, 205, 205))
     }
+
 	#box1 {
     float: left;
     width: 29.1%;
@@ -449,6 +473,15 @@ body {
 }
 
 
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .artist-profile {
+        flex-direction: column;
+    }
+}
 
 
 
