@@ -190,6 +190,24 @@ body {
     padding-left: 30px;
 }
 
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+}
+
+.footer .logo {
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 20px;
+}
+
+.footer .copyright {
+    font-size: 14px;
+    color: #555;
+}
 
 
 /******************************************/
