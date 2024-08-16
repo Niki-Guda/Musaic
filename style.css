@@ -76,10 +76,10 @@ body {
 
 
 #events img {
-    width: 12.5rem; /* 200px */
-    height: 12.5rem; /* Maintain aspect ratio */
-    border: solid 0.1875rem; /* 3px */    
-    margin: 3.125rem auto; /* 50px */
+    width: 20%; /* 200px */
+    height: 20%; /* Maintain aspect ratio */
+    border: solid 3%; /* 3px */    
+    margin: 5% auto; /* 50px */
     transition: transform 0.5s ease-in;
     -webkit-transition: -webkit-transform 0.5s ease-in;
     -o-transition: -o-transform 0.5s ease-in;
